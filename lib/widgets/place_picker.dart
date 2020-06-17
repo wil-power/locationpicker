@@ -395,7 +395,7 @@ class PlacePickerState extends State<PlacePicker> {
           // ..locality = result['address_components'][1]['short_name']
           ..latLng = latLng
           ..formattedAddress = result['formatted_address']
-          ..placeId = result['place_id']
+          ..placeId = result['place_id'];
           // ..postalCode = result['address_components'][7]['short_name']
           // ..country = AddressComponent.fromJson(result['address_components'][6])
           // ..administrativeAreaLevel1 = AddressComponent.fromJson(result['address_components'][5])
