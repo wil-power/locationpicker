@@ -392,17 +392,17 @@ class PlacePickerState extends State<PlacePicker> {
       setState(() {
         this.locationResult = LocationResult()
           ..name = result['address_components'][0]['short_name']
-          ..locality = result['address_components'][1]['short_name']
+          // ..locality = result['address_components'][1]['short_name']
           ..latLng = latLng
           ..formattedAddress = result['formatted_address']
           ..placeId = result['place_id']
-          ..postalCode = result['address_components'][7]['short_name']
-          ..country = AddressComponent.fromJson(result['address_components'][6])
-          ..administrativeAreaLevel1 = AddressComponent.fromJson(result['address_components'][5])
-          ..administrativeAreaLevel2 = AddressComponent.fromJson(result['address_components'][4])
-          ..city = AddressComponent.fromJson(result['address_components'][3])
-          ..subLocalityLevel1 = AddressComponent.fromJson(result['address_components'][2])
-          ..subLocalityLevel2 = AddressComponent.fromJson(result['address_components'][1]);
+          // ..postalCode = result['address_components'][7]['short_name']
+          // ..country = AddressComponent.fromJson(result['address_components'][6])
+          // ..administrativeAreaLevel1 = AddressComponent.fromJson(result['address_components'][5])
+          // ..administrativeAreaLevel2 = AddressComponent.fromJson(result['address_components'][4])
+          // ..city = AddressComponent.fromJson(result['address_components'][3])
+          // ..subLocalityLevel1 = AddressComponent.fromJson(result['address_components'][2])
+          // ..subLocalityLevel2 = AddressComponent.fromJson(result['address_components'][1]);
       });
     } catch (e) {
       print(e);
