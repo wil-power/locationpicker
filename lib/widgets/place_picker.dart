@@ -319,7 +319,7 @@ class PlacePickerState extends State<PlacePicker> {
       }
     }
 
-    return "${this.locationResult.name}, ${this.locationResult.locality}";
+    return "${this.locationResult.formattedAddress}, ${this.locationResult.locality}";
   }
 
   /// Moves the marker to the indicated lat,lng
