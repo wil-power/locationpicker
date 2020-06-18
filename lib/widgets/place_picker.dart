@@ -315,11 +315,11 @@ class PlacePickerState extends State<PlacePicker> {
     for (NearbyPlace np in this.nearbyPlaces) {
       if (np.latLng == this.locationResult.latLng && np.name != this.locationResult.locality) {
         this.locationResult.name = np.name;
-        return "${np.name}, ${this.locationResult.locality}";
+        return "${np.formattedAddress}";
       }
     }
 
-    return "${this.locationResult.formattedAddress}, ${this.locationResult.locality}";
+    return "${this.locationResult.formattedAddress}";
   }
 
   /// Moves the marker to the indicated lat,lng
